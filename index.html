@@ -46,7 +46,7 @@
       <section class="hero">  
         <div class="container">
          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-         <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
+         <button type="button" class="btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
         <!-- Секция с описанием достоинств компании -->
@@ -393,7 +393,7 @@
           </address>
         </div>
         <div class="foot-cont-item">
-          <h3 class="title about-title foot-title">присоединяйтесь</h3>
+          <h3 class="about-title foot-title">присоединяйтесь</h3>
           <ul class="member-social-list list">
             <li class="member-social-list-item">
               <a class="member-social-link" href=""  target="_blank" 
@@ -430,30 +430,27 @@
           </ul>
         </div>
         <div class="foot-cont-item">
-          <h3 class="title about-title foot-title">Подпишитесь на рассылку</h3>
-          <form action="#">
-           <div class="foot-subscription">
-             <input 
+          <h3 class="about-title foot-title">Подпишитесь на рассылку</h3>
+          <form class="foot-subscription" action="#">
+            <input 
               type="email" 
               class="foot-input" 
               name="subscription-email" 
               placeholder="E-mail"/>
-            <div class="foot-button">
-              <button 
-                class="subscription-button" 
+            <button 
+                class="btn subscription-button" 
                 type="submit">Подписаться
                 <svg class="subscription-icon"
                   width="24"
                   height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
-              </button>
-            </div>
-           </div>
+            </button>                    
           </form>                 
         </div>
        </div>
     </footer> 
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal> 
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -510,7 +507,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-field">
+          <div class="form-field form-textarea">
             <label class="input-text" for="user-area">Комментарий</label>
             <textarea 
               placeholder="Введите текст"
@@ -532,7 +529,7 @@
                 <svg class="checkbox-icon" 
                   width="16"
                   height="15">
-                  <use href="./images/icons.svg#icon-icon-check"> 
+                  <use href="./images/icons.svg#icon-check"></use> 
                 </svg>
               </span> 
                Соглашаюсь с рассылкой и принимаю&#160;
@@ -543,7 +540,7 @@
             </label>
           </div>
           <button 
-            class="modal-button" 
+            class="btn modal-button" 
             type="submit">Отправить
           </button>
         </form>
